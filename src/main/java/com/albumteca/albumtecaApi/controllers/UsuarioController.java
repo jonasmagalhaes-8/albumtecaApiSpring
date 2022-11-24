@@ -2,7 +2,6 @@ package com.albumteca.albumtecaApi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,7 +13,6 @@ import com.albumteca.albumtecaApi.models.UsuarioModel;
 import com.albumteca.albumtecaApi.services.UsuarioService;
 
 @RestController
-@CrossOrigin
 @RequestMapping(value = "/usuarios")
 public class UsuarioController
 {
