@@ -68,7 +68,7 @@ public class AlbumService
 		ResultDTO sucesso = new ResultDTO(0);
 		
 		if(album!=null)
-		sucesso.setResult(1);
+		sucesso.setResult(album.getId());
 		
 		return sucesso;
 	}
