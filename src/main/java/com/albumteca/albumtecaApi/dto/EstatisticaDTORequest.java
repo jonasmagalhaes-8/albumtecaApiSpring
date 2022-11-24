@@ -1,12 +1,10 @@
 package com.albumteca.albumtecaApi.dto;
 
-import com.albumteca.albumtecaApi.models.UsuarioModel;
-
 public class EstatisticaDTORequest {
 
 	String tipo;
 	
-	UsuarioModel usuario;
+	Integer usuario;
 		
 	String anoEscutado;
 		
@@ -15,11 +13,11 @@ public class EstatisticaDTORequest {
 		
 	}
 	
-	public UsuarioModel getUsuario() {
+	public Integer getUsuario() {
 		return usuario;
 	}
 
-	public void setUsuario(UsuarioModel usuario) {
+	public void setUsuario(Integer usuario) {
 		this.usuario = usuario;
 	}
 

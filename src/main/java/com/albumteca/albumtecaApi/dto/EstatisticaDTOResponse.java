@@ -17,7 +17,6 @@ public class EstatisticaDTOResponse {
 	}
 
 	public EstatisticaDTOResponse(String ranking) {
-		super();
 		this.ranking = ranking;
 	}	
 }

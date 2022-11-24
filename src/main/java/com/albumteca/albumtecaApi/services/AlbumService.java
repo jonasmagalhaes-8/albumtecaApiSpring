@@ -28,19 +28,19 @@ public class AlbumService
 	    
 	    int i=1;
 	    
-	    if(estatisticas.getTipo().equals("artista"))
+	    if(estatisticas.getTipo().equals("Artista"))
 	    {
 	    	if(estatisticas.getAnoEscutado().equals("Todos"))
-	    	list = repository.contaEstatisticasArtista(estatisticas.getUsuario().getUsuarioId());
+	    	list = repository.contaEstatisticasArtista(estatisticas.getUsuario());
 	    	else
-	    	list = repository.contaEstatisticasArtistaAno(estatisticas.getUsuario().getUsuarioId(), Integer.parseInt(estatisticas.getAnoEscutado()));	
+	    	list = repository.contaEstatisticasArtistaAno(estatisticas.getUsuario(), Integer.parseInt(estatisticas.getAnoEscutado()));	
 	    }
 	    else
 	    {
 	    	if(estatisticas.getAnoEscutado().equals("Todos"))
-	    	list = repository.contaEstatisticasGenero(estatisticas.getUsuario().getUsuarioId());
+	    	list = repository.contaEstatisticasGenero(estatisticas.getUsuario());
 	    	else
-	    	list = repository.contaEstatisticasGeneroAno(estatisticas.getUsuario().getUsuarioId(), Integer.parseInt(estatisticas.getAnoEscutado()));	
+	    	list = repository.contaEstatisticasGeneroAno(estatisticas.getUsuario(), Integer.parseInt(estatisticas.getAnoEscutado()));	
 	    }
 	    
 	    for (Object[] resultColumn : list)
