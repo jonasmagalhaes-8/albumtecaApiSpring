@@ -45,7 +45,7 @@ public class AlbumService
 	    
 	    for (Object[] resultColumn : list)
 	    {
-	    	ranking += i+"º - " + resultColumn[0] + " - " + resultColumn[1] + "\n";
+	    	ranking += i+"º - " + resultColumn[0] + " - " + resultColumn[1] + " Álbuns\n";
 	    	i++;
 	    }
 	  		    
